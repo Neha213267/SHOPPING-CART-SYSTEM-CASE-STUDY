@@ -1,0 +1,23 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let fd of fashionData">
+
+            <div class="fashionbox mt-3 mb-3">
+                <img src="{{fd.fashionImg}}">
+                <h1>{{fd.fashionName}}</h1>
+                <p>{{fd.fashionDetails}}</p>
+                <p>{{fd.fashionComposition}}</p>
+                <p>{{fd.fashionPrice | currency:'INR'}}</p>
+                <br/>
+                <a href="http://localhost:8025/product" target=_blank> Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
